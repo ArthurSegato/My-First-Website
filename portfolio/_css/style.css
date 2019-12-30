@@ -22,7 +22,7 @@ body{
 
 @media screen and (min-width: 320px) {
     footer, .subTitle {
-      font-size: calc(10px + 5 * ((100vw - 320px) / 680));
+      font-size: calc(15px + 5 * ((100vw - 320px) / 680));
     }
 
     .name {
@@ -34,8 +34,8 @@ body{
     }
 
     #button {
-        width: calc(25px + 25 * ((100vw - 320px) / 680));
-        height: calc(25px + 25 * ((100vw - 320px) / 680));
+        width: calc(40px + 25 * ((100vw - 320px) / 680));
+        height: calc(40px + 25 * ((100vw - 320px) / 680));
     }
     .title {
         font-size: calc(15px + 15 * ((100vw - 320px) / 680));
@@ -43,7 +43,7 @@ body{
     }
     
     .text {
-        font-size: calc(10px + 5 * ((100vw - 320px) / 680));
+        font-size: calc(15px + 5 * ((100vw - 320px) / 680));
         padding-top: 8%;
     }
 
@@ -52,11 +52,14 @@ body{
         width: 50px;
     }
     ul {
-        font-size: calc(10px + 5 * ((100vw - 320px) / 680));
+        font-size: calc(15px + 5 * ((100vw - 320px) / 680));
     }
 
     .logo {
-    width: calc(50% + 50 * ((100vw - 320px) / 680));;
+        width: calc(50% + 50 * ((100vw - 320px) / 680));;
+    }
+    .list a{
+        font-size: calc(25px + 5 * ((100vw - 320px) / 680)); 
     }
 }
 
