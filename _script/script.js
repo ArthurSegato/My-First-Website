@@ -10,7 +10,7 @@ function openNav() {
         else {
             document.getElementById("sideNav").style.width = "50%";
         }
-        document.getElementById("box").style.opacity = "0.65";
+        document.getElementById("fade").style.opacity = "0.65";
         open = true;
     }
     else {
@@ -28,7 +28,7 @@ function openNav() {
         else {
             $(".icon").toggleClass("close");
             document.getElementById("sideNav").style.width = "0";
-            document.getElementById("box").style.opacity = "0.5";
+            document.getElementById("fade").style.opacity = "0.5";
             open = false;
         }
     }
