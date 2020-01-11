@@ -3,7 +3,7 @@
 @media screen and (min-width: 320px) {
     .contact {
         word-spacing: 30px;
-        font-size: calc(30px + 5 * ((100vw - 320px) / 680));
+        font-size: 35px;
     }
 
     footer, .subTitle {
@@ -51,7 +51,7 @@
 @media screen and (min-width: 1000px) {
     .contact {
         word-spacing: 30px;
-        font-size: calc(40px + 5 * ((100vw - 320px) / 680));
+        font-size: 50px;
     }
 
     footer, .subTitle {
