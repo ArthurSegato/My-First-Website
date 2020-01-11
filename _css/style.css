@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 320px) {
+    .contact {
+        word-spacing: 30px;
+        font-size: calc(30px + 5 * ((100vw - 320px) / 680));
+    }
+
     footer, .subTitle {
       font-size: calc(15px + 5 * ((100vw - 320px) / 680));
     }
@@ -44,6 +49,11 @@
 }
 
 @media screen and (min-width: 1000px) {
+    .contact {
+        word-spacing: 30px;
+        font-size: calc(40px + 5 * ((100vw - 320px) / 680));
+    }
+
     footer, .subTitle {
       font-size: 15px;
     }
@@ -265,10 +275,6 @@ footer {
     z-index: -1;
 }
 
-.contact {
-    word-spacing: 10px;
-}
-
 .tracking-in-expand {
     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
             animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -356,4 +362,8 @@ footer {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+p {
+    margin-top: 5px;
 }
