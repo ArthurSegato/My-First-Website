@@ -42,10 +42,3 @@ function about() {
     document.getElementById("about").style.display = 'block';
     openFull = true;
 }
-
-function neko() {
-    document.getElementById("sideNav").style.width = "100%";
-    document.getElementById("list").style.display = 'none';
-    document.getElementById("neko").style.display = 'block';
-    openFull = true;
-}
