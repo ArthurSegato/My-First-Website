@@ -1,9 +1,9 @@
-var openHalf = false;
+var open = false;
 var openFull = false;
 
 function openNav() {
     var windowWidth = window.innerWidth;
-    if (openHalf == false) {
+    if (open == false) {
         $(".icon").toggleClass("close");
         if (windowWidth >= 1000) {
             document.getElementById("sideNav").style.width = "25%";
@@ -12,13 +12,12 @@ function openNav() {
             document.getElementById("sideNav").style.width = "50%";
         }
         document.getElementById("fade").style.opacity = "0.65";
-        openHalf = true;
+        open = true;
     }
     else {
         if (openFull == true) {
             document.getElementById("list").style.display = 'block';
             document.getElementById("about").style.display = 'none';
-            document.getElementById("neko").style.display = 'none';
             if (windowWidth >= 1000) {
                 document.getElementById("sideNav").style.width = "25%";
             }
@@ -31,7 +30,7 @@ function openNav() {
             $(".icon").toggleClass("close");
             document.getElementById("sideNav").style.width = "0";
             document.getElementById("fade").style.opacity = "0.5";
-            openHalf = false;
+            open = false;
         }
     }
 }
