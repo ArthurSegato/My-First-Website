@@ -1,5 +1,7 @@
 var open = false;
 var openFull = false;
+var aboutText = false;
+var nekoText = false;
 
 function openNav() {
     var windowWidth = window.innerWidth;
@@ -17,7 +19,12 @@ function openNav() {
     else {
         if (openFull == true) {
             document.getElementById("list").style.display = 'block';
-            document.getElementById("about").style.display = 'none';
+            if(aboutText == true) {
+                document.getElementById("about").style.display = 'none';
+            }
+            if(nekoText == true){
+                document.getElementById("neko").style.display = 'none';
+            }
             if (windowWidth >= 1000) {
                 document.getElementById("sideNav").style.width = "25%";
             }
@@ -40,4 +47,13 @@ function about() {
     document.getElementById("list").style.display = 'none';
     document.getElementById("about").style.display = 'block';
     openFull = true;
+    aboutText = true;
+}
+
+function neko() {
+    document.getElementById("sideNav").style.width = "100%";
+    document.getElementById("list").style.display = 'none';
+    document.getElementById("neko").style.display = 'block';
+    openFull = true;
+    nekoText = true;
 }
