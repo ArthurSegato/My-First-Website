@@ -18,6 +18,7 @@ function openNav() {
         if (openFull == true) {
             document.getElementById("list").style.display = 'block';
             document.getElementById("about").style.display = 'none';
+            
             if (windowWidth >= 1000) {
                 document.getElementById("sideNav").style.width = "25%";
             }

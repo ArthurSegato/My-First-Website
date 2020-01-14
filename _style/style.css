@@ -214,7 +214,7 @@ a:link, a:visited {
     cursor: pointer;
 }
 
-.conteudo {
+.about {
     width: 50%;
     height: 90%;
     left: 25%;
@@ -361,12 +361,4 @@ p {
 
 .contact {
     word-spacing: 30px;
-}
-
-textarea {
-  width: 90%;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: #ecf0f1;
-  resize: none;
 }
