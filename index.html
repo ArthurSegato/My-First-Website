@@ -66,6 +66,14 @@
                 z-index: -1;
             }
 
+            textarea {
+              width: 100%;
+              box-sizing: border-box;
+              border-radius: 4px;
+              background-color: #ecf0f1;
+              resize: none;
+            }
+
             #background {
                 position: fixed; 
                 top: -50%; 
@@ -172,7 +180,8 @@
             .list {
                 position: absolute;
                 left: 10%;
-                top: 45%;
+                top: 50%;
+                margin-top: -50px;
             }
 
             .nav .topic {
@@ -184,7 +193,8 @@
             }
 
             .about {
-                width: 50%;
+                width: 70%;
+                padding-right: 10%;
                 height: 90%;
                 left: 25%;
                 position: absolute;
@@ -194,6 +204,7 @@
                 animation-delay: 5s;
                 animation-duration: 2s;
                 overflow-y: auto;
+                overflow-x: none;
                 font-family: 'Roboto', sans-serif;
             }
 
@@ -438,7 +449,7 @@
         <div id="sideNav" class="nav">
             <div class="list" id="list">
                 <a onclick="about()" class="topic">about</a>
-                <a href="nekoware" class="topic">nekoware</a>
+                <a onclick="neko()" class="topic">nekoware</a>
                 <p>
                     <del>
                         <a class="topic">projects</a>
@@ -487,6 +498,47 @@
                     </ul>
                 </p>
             </div>
+            <div id="neko" class="about">
+                <h1 class="title">NEKOWARE LICENSE</h1>
+                <span class="underline"></span>
+                <Br>
+                <textarea rows="9" cols="100" readonly>
+    'Nekoware License'
+        Version 1
+
+"You are free to use this thing any way and wherever you want as long as you pet a cat first, in case there are no cats near, I allow you to pet me."
+
+This license was created by Arthur Segato <arthursegato@ctemplar.com>
+13/01/2020
+                </textarea>
+                <br>
+                <br>
+                <h1 class="title">YOU CAN:</h1>
+                <span class="underline"></span>
+                <p class="text">
+                    <ul>
+                        <li>Edit</li>
+                        <li>Use</li>
+                        <li>Study</li>
+                        <li>Lick</li>
+                        <li>Modify</li>
+                        <li>Copy</li>
+                        <li>Pet</li>
+                        <li>Distribute</li>
+                        <li>Sell</li>
+                        <li>Do anything you want with this thing</li>
+                    </ul>
+                </p>
+                <br>
+                <h1 class="title">YOU SHALL NOT:</h1>
+                <span class="underline"></span>
+                <p class="text">
+                    <ul>
+                        <li>Pass <img src="_images/gandalf.webp" width="35px" height="25px"></li>
+                        <li>Use without petting a cat first</li>
+                    </ul>
+                </p>
+            </div>
         </div>
         <div id="center">
             <img src="_images/logo.png" alt="logo" class="logo scale-up-center">
@@ -506,6 +558,7 @@
         <script type="text/javascript">
             var open = false;
             var openFull = false;
+            var conteudo;
             function openNav() {
                 var windowWidth = window.innerWidth;
                 if (open == false) {
@@ -521,9 +574,13 @@
                 }
                 else {
                     if (openFull == true) {
-                        document.getElementById("list").style.display = 'block';
-                        document.getElementById("about").style.display = 'none';
-                        
+                        if (conteudo == "about") {
+                            document.getElementById("about").style.display = 'none';
+                        }
+                        if (conteudo == "neko") {
+                            document.getElementById("neko").style.display = 'none';
+                        }
+                        document.getElementById("list").style.display = 'block';                        
                         if (windowWidth >= 1000) {
                             document.getElementById("sideNav").style.width = "25%";
                         }
@@ -545,6 +602,15 @@
                 document.getElementById("list").style.display = 'none';
                 document.getElementById("about").style.display = 'block';
                 openFull = true;
+                conteudo = "about";
+            }
+
+            function neko() {
+                document.getElementById("sideNav").style.width = "100%";
+                document.getElementById("list").style.display = 'none';
+                document.getElementById("neko").style.display = 'block';
+                openFull = true;
+                conteudo = "neko";
             }
         </script>
     </body>
