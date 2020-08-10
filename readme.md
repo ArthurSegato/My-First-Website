@@ -8,3 +8,5 @@ I also removed all presence of my logo, as I made this code in the public domain
 So when using this repository you will notice that the site will break, due to missing files, I encourage you to add your own images.
 
 Below is an image of what the site originally looked like
+
+[image](https://raw.githubusercontent.com/ArthurSegato/My-First-Website/master/Site.PNG)
