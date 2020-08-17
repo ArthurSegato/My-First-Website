@@ -10601,7 +10601,7 @@ a, a:hover, a:visited, a:active, a:link, body {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover
+	background-size: cover;
 }
 
 .jumbotron {
